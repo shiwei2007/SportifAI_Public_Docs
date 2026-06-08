@@ -1,0 +1,249 @@
+{
+  "decoders": {
+    "hybrid_refined": {
+      "macro_summary": {
+        "num_videos": 103,
+        "mAP": {
+          "mAP@0.3": 0.874,
+          "mAP@0.5": 0.868,
+          "mAP@0.7": 0.819
+        },
+        "boundary_canonical_frames": {
+          "start_error": 7.109,
+          "end_error": 4.299,
+          "duration_error": 8.177
+        },
+        "boundary": {
+          "start_error": 7.109,
+          "end_error": 4.299,
+          "duration_error": 8.177
+        },
+        "boundary_source_frames": {
+          "start_error": 14.218,
+          "end_error": 8.597,
+          "duration_error": 16.354
+        },
+        "boundary_seconds": {
+          "start_error": 0.237,
+          "end_error": 0.143,
+          "duration_error": 0.273
+        },
+        "non_action": {
+          "false_positive_events": 0.631,
+          "false_positive_events_by_label": {
+            "backhand-2H": 0.184,
+            "forehand": 0.408,
+            "serve": 0.039
+          },
+          "false_positive_frames": 33.078,
+          "false_positive_frames_by_label": {
+            "backhand-2H": 11.34,
+            "forehand": 19.184,
+            "serve": 2.553
+          },
+          "false_positives": 2.786,
+          "false_positives_per_1000_frames": 1.967,
+          "false_positives_per_minute": 3.54,
+          "span_fraction_with_false_positive": 0.578
+        }
+      },
+      "dataset": {
+        "num_videos": 103,
+        "mAP": {
+          "mAP@0.3": 0.893,
+          "mAP@0.5": 0.889,
+          "mAP@0.7": 0.842
+        },
+        "per_class": {
+          "serve": {
+            "precision": 0.956,
+            "recall": 0.956,
+            "f1": 0.956,
+            "tp": 109,
+            "fp": 5,
+            "fn": 5
+          },
+          "forehand": {
+            "precision": 0.69,
+            "recall": 0.955,
+            "f1": 0.801,
+            "tp": 149,
+            "fp": 67,
+            "fn": 7
+          },
+          "backhand-2H": {
+            "precision": 0.784,
+            "recall": 0.853,
+            "f1": 0.817,
+            "tp": 87,
+            "fp": 24,
+            "fn": 15
+          }
+        },
+        "segment_length_canonical_frames": {
+          "serve": {
+            "count": 114,
+            "shortest": 43,
+            "longest": 175,
+            "mean": 123.044,
+            "median": 124.0
+          },
+          "forehand": {
+            "count": 216,
+            "shortest": 15,
+            "longest": 88,
+            "mean": 69.139,
+            "median": 70.0
+          },
+          "backhand-2H": {
+            "count": 111,
+            "shortest": 45,
+            "longest": 87,
+            "mean": 70.216,
+            "median": 71.0
+          }
+        },
+        "boundary_canonical_frames": {
+          "start_error": 7.525,
+          "end_error": 4.212,
+          "duration_error": 8.357
+        },
+        "boundary": {
+          "start_error": 7.525,
+          "end_error": 4.212,
+          "duration_error": 8.357
+        },
+        "boundary_source_frames": {
+          "start_error": 15.049,
+          "end_error": 8.423,
+          "duration_error": 16.713
+        },
+        "boundary_seconds": {
+          "start_error": 0.251,
+          "end_error": 0.14,
+          "duration_error": 0.279
+        },
+        "confusion": {
+          "serve": {
+            "serve": 109
+          },
+          "backhand-2H": {
+            "backhand-2H": 87,
+            "forehand": 8
+          },
+          "forehand": {
+            "forehand": 149,
+            "backhand-2H": 1
+          },
+          "non-action": {
+            "forehand": 16,
+            "serve": 1,
+            "backhand-2H": 8
+          }
+        },
+        "non_action": {
+          "false_positives": 287.0,
+          "false_positive_events": 65.0,
+          "false_positive_events_by_label": {
+            "serve": 4,
+            "forehand": 42,
+            "backhand-2H": 19
+          },
+          "false_positive_frames": 3407.0,
+          "false_positive_frames_by_label": {
+            "serve": 263,
+            "forehand": 1976,
+            "backhand-2H": 1168
+          },
+          "false_positives_per_1000_frames": 1.89,
+          "span_fraction_with_false_positive": 0.586,
+          "false_positives_per_minute": 3.401
+        },
+        "attributes": {
+          "handedness": {
+            "right": {
+              "serve": {
+                "precision": 0.956,
+                "recall": 0.956,
+                "f1": 0.956,
+                "tp": 109,
+                "fp": 5,
+                "fn": 5
+              },
+              "forehand": {
+                "precision": 0.69,
+                "recall": 0.955,
+                "f1": 0.801,
+                "tp": 149,
+                "fp": 67,
+                "fn": 7
+              },
+              "backhand-2H": {
+                "precision": 0.784,
+                "recall": 0.853,
+                "f1": 0.817,
+                "tp": 87,
+                "fp": 24,
+                "fn": 15
+              }
+            }
+          },
+          "court_side": {
+            "left": {
+              "serve": {
+                "precision": 0.907,
+                "recall": 0.98,
+                "f1": 0.942,
+                "tp": 49,
+                "fp": 5,
+                "fn": 1
+              },
+              "forehand": {
+                "precision": 0.699,
+                "recall": 0.973,
+                "f1": 0.814,
+                "tp": 72,
+                "fp": 31,
+                "fn": 2
+              },
+              "backhand-2H": {
+                "precision": 0.742,
+                "recall": 0.907,
+                "f1": 0.817,
+                "tp": 49,
+                "fp": 17,
+                "fn": 5
+              }
+            },
+            "right": {
+              "serve": {
+                "precision": 0.967,
+                "recall": 0.906,
+                "f1": 0.935,
+                "tp": 58,
+                "fp": 2,
+                "fn": 6
+              },
+              "forehand": {
+                "precision": 0.673,
+                "recall": 0.927,
+                "f1": 0.779,
+                "tp": 76,
+                "fp": 37,
+                "fn": 6
+              },
+              "backhand-2H": {
+                "precision": 0.822,
+                "recall": 0.771,
+                "f1": 0.796,
+                "tp": 37,
+                "fp": 8,
+                "fn": 11
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
